@@ -227,7 +227,7 @@
        open(5,file='itag')
        read(5,nml=model_inputs,iostat=itag_ierr,err=888)
 888    if (itag_ierr /= 0) then
-       print*,'Incorrect namelist variable(s) found in the itag file,stopping.'
+       print *, 'ITAG NAMELIST READ ERROR: iostat=', itag_ierr
        stop
        endif
        if (me == 0) write(6, model_inputs)
