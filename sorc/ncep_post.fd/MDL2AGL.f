@@ -382,6 +382,11 @@
           END IF
 
 !---  Max Derived Radar Reflectivity at -10C
+          print *, 'hjp1 DEBUG: IGET(785)=', IGET(785)
+          print *, 'IAVBLFLD    = ', IAVBLFLD(IGET(785))
+          print *, 'LVLSXML     = ', LVLSXML(LP,IGET(785))
+          print *, 'IFHR        = ', IFHR
+          print *, 'LP          = ', LP
           IF((IGET(785)>0) )THEN
              DO J=JSTA,JEND
              DO I=ISTA,IEND

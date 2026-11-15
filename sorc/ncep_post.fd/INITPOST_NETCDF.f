@@ -2022,7 +2022,8 @@
       spval,VarName,refd_max)
      if(debugprint)print*,'sample ',VarName,' = ',refd_max(isa,jsa)
 ! max hourly -10C reflectivity
-      VarName='refdmax263k'
+!jp       VarName='refdmax263k'
+      VarName='REFDM10C_MAX'
       call read_netcdf_2d_para(ncid2d,ista,ista_2l,iend,iend_2u,jsta,jsta_2l,jend,jend_2u, &
       spval,VarName,refdm10c_max)
      if(debugprint)print*,'sample ',VarName,' = ',refdm10c_max(isa,jsa)
